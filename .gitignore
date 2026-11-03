@@ -1,0 +1,19 @@
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / tool folders
+.vscode/
+.idea/
+.claude/
+
+# Packaged builds and signing keys (never commit .pem files)
+*.zip
+*.crx
+*.pem
+
+# Logs and env files
+*.log
+.env
+.env.*
