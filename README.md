@@ -26,7 +26,7 @@ The extension is not in the Chrome Web Store yet, so you install it manually. It
 
 ### Chrome, Edge, Brave, Opera (Chromium browsers)
 
-1. **Download the code.** On this page, click the green **Code** button, then **Download ZIP**.
+1. **Download the extension.** Go to the [latest release](https://github.com/abdallah28r/magnet-to-stremio/releases/latest) and download the `.zip` file under **Assets**.
 2. **Unzip** the file to a folder you will keep (do not delete it later, the browser loads the extension from there).
 3. Open your browser's extensions page:
    - Chrome: `chrome://extensions`
