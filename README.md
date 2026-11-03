@@ -8,11 +8,13 @@
   A small browser extension that opens <code>magnet:</code> links in <a href="https://web.strem.io">Stremio Web</a> with one click.
 </p>
 
----
+<p align="center">
+  <img src=".github/screenshots.png" width="560" alt="The extension popup, showing the direct player switch and the list of enabled sites">
+</p>
 
 ## What it does
 
-- **One-click open:** on the websites you choose, every magnet link gets a small **▶ Stremio** button. Click it and the link opens in Stremio Web.
+- **One-click open:** on the websites you choose, every magnet link gets a small **▶ Stremio** button. Clicking the button, or the magnet link itself, opens it in Stremio Web instead of your torrent app.
 - **Paste a link:** paste any magnet link in the extension popup and open it in Stremio.
 - **Two modes:**
   - **Details page** (default): opens Stremio's page for the torrent.
@@ -32,6 +34,7 @@ The extension is not in the Chrome Web Store yet, so you install it manually. It
    - Chrome: `chrome://extensions`
    - Edge: `edge://extensions`
    - Brave: `brave://extensions`
+   - Opera: `opera://extensions`
 4. Turn on **Developer mode** (a switch, usually at the top right).
 5. Click **Load unpacked** and select the unzipped folder (the one that contains `manifest.json`).
 6. Done. Pin the extension from the puzzle-piece menu so the icon stays visible.
@@ -43,8 +46,8 @@ Download the new ZIP, replace the old folder's files, then click the **reload** 
 ## How to use
 
 1. Click the extension icon.
-2. In the **Sites** tab, type a website address (for example `example.com`) and press **＋**, or click **Add current site**.
-3. Visit that website. Magnet links now show a **▶ Stremio** button.
+2. In the **Sites** tab, type a website address (for example `example.com`) and press **+**, or click **Add current site**.
+3. Visit that website. Magnet links now show a **▶ Stremio** button, and clicking a magnet link opens it in Stremio. To use your torrent app again on that site, remove it from the list and reload the page.
 4. Optional: switch on **Direct player mode** in the popup. Keep the Stremio desktop app open for this mode.
 
 To open a single link without adding a site, use the **Send link** tab and paste the magnet link.
@@ -53,7 +56,7 @@ To change the language, click the ⚙️ button at the top of the popup and choo
 
 ## Requirements
 
-- A Chromium-based browser (Chrome, Edge, Brave, Opera, Vivaldi).
+- A Chromium-based browser (Chrome, Edge, Brave, Opera). Firefox and Safari are not supported.
 - For **Direct player** mode: the [Stremio desktop app](https://www.stremio.com/downloads) running on the same computer. It serves streams locally on port `11470`.
 
 ## Privacy
