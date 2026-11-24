@@ -46,11 +46,28 @@ const toggle      = document.getElementById('directToggle');
 const modeCard    = document.getElementById('modeCard');
 const modeWarning = document.getElementById('modeWarning');
 
+// فحص هل سيرفر Stremio المحلي شغّال على المنفذ 11470
+// أي رد HTTP يعني أنه شغّال، وفشل الاتصال أو انتهاء المهلة يعني أنه متوقف
+function checkStremioServer() {
+  const ctrl  = new AbortController();
+  const timer = setTimeout(() => ctrl.abort(), 1500);
+  return fetch('http://127.0.0.1:11470/', { signal: ctrl.signal, cache: 'no-store' })
+    .then(() => true, () => false)
+    .finally(() => clearTimeout(timer));
+}
+
+let checkId = 0;
 function applyToggleUI(on) {
   toggle.classList.toggle('on', on);
   toggle.setAttribute('aria-checked', on);
   modeCard.classList.toggle('enabled', on);
-  modeWarning.classList.toggle('show', on);
+  modeWarning.classList.remove('show');
+  if (!on) { checkId++; return; }
+  // نظهر التحذير فقط إذا لم يرد السيرفر (ونتجاهل نتائج الفحوصات القديمة)
+  const id = ++checkId;
+  checkStremioServer().then(running => {
+    if (id === checkId && toggle.classList.contains('on')) modeWarning.classList.toggle('show', !running);
+  });
 }
 
 // تحميل الحالة المحفوظة

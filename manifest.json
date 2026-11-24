@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Magnet to Stremio",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "description": "Open magnet links in Stremio Web with one click. Unofficial; not affiliated with Stremio.",
   "permissions": ["storage"],
   "host_permissions": ["<all_urls>"],

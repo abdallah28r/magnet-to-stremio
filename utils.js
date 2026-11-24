@@ -60,15 +60,15 @@ function mts_buildUrl(hash, directPlayer) {
  */
 const MTS_I18N = {
   en: {
-    headerSub:       'v3.0 — Direct player + site control',
+    headerSub:       'v3.1 — Direct player + site control',
     settings:        'Settings',
     tabSites:        'Sites',
     tabSend:         'Send link',
     modeTitle:       'Direct player mode',
     modeDesc:        'Opens magnet links straight in the Stremio player instead of the details page',
-    modeWarning:     '⚠️ <strong>Requires the Stremio desktop app!</strong><br>' +
-                     'It works through the local server on port <strong>11470</strong>.<br>' +
-                     'If Stremio is not running, playback will not start.',
+    modeWarning:     '⚠️ <strong>Stremio desktop app is not running!</strong><br>' +
+                     'No reply from the local server on port <strong>11470</strong>.<br>' +
+                     'Open Stremio, or playback will not start.',
     sitesLabel:      'Sites where the extension works automatically',
     sitePlaceholder: 'example.com or https://example.com/',
     emptySites:      'No sites yet — add one above',
@@ -92,15 +92,15 @@ const MTS_I18N = {
     okDetail:        '📄 Opened on the details page!',
   },
   ar: {
-    headerSub:       'v3.0 — مشغل مباشر + التحكم في المواقع',
+    headerSub:       'v3.1 — مشغل مباشر + التحكم في المواقع',
     settings:        'الإعدادات',
     tabSites:        'المواقع',
     tabSend:         'إرسال رابط',
     modeTitle:       'وضع المشغل المباشر',
     modeDesc:        'يفتح رابط Magnet مباشرةً في مشغل Stremio بدل صفحة التفاصيل',
-    modeWarning:     '⚠️ <strong>يتطلب تطبيق Stremio Desktop!</strong><br>' +
-                     'يعمل عبر السيرفر المحلي على المنفذ <strong>11470</strong>.<br>' +
-                     'إذا لم يكن Stremio مفتوحاً فلن يعمل التشغيل.',
+    modeWarning:     '⚠️ <strong>تطبيق Stremio Desktop غير مفتوح!</strong><br>' +
+                     'لا يوجد رد من السيرفر المحلي على المنفذ <strong>11470</strong>.<br>' +
+                     'افتح Stremio وإلا فلن يعمل التشغيل.',
     sitesLabel:      'المواقع التي تعمل عليها الإضافة تلقائياً',
     sitePlaceholder: 'example.com أو https://example.com/',
     emptySites:      'لا توجد مواقع — أضف موقعاً من الأعلى',

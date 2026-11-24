@@ -1,5 +1,12 @@
 # Changelog
 
+## v3.1.0
+
+### Changes
+
+- Direct player mode: the popup now checks whether the Stremio desktop app is running (local server on port 11470). The warning shows only when Stremio does not reply, instead of all the time.
+- Clearer warning text in English and Arabic.
+
 ## v3.0.0
 
 First public release.
